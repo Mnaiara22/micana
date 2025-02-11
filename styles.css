@@ -1,0 +1,349 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+body{
+    font-family: 'Oxanium', sans-serif;
+    background-color: #141212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: bold;  
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*HEADER*/
+  
+.banner {
+    background-color: white;    
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Altura del banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Tektur';
+}
+  
+.img-banner{
+    width: 300px;
+}
+
+.navbar {
+    position: sticky; 
+    top: 0; /* Hace que se quede pegado cuando lleguemos al top */
+    background-color: rgba(255, 161, 222, 0.9); /* Fondo semi-transparente */
+    color: black;
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    width: 100%; /* Asegura que cubra todo el ancho de la pantalla */
+}
+
+
+  
+/* Estilo de los enlaces */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+  
+.navbar li {
+    margin: 0 15px;
+}
+  
+.navbar a {
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+  
+.navbar a:hover {
+    background-color: #D4A0FF; /* Color de hover */
+    border-radius: 8px;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.img-navbar{
+    width: 90px;
+    border-radius: 25px;
+  }
+  
+
+/*FIN HEADER*/
+
+
+/*INDEX - INTRODUCCION*/
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Estilos para el texto */
+.texto {
+    flex: 1 1 100%; /* Ocupa el 100% en pantallas pequeñas */
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para la imagen */
+.imagen {
+    flex: 1 1 100%; /* Ocupa el 100% en pantallas pequeñas */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Queries para pantallas más grandes (desde 768px en adelante) */
+@media (min-width: 768px) {
+    .texto {
+        flex: 1 1 48%; /* Ocupa el 48% del ancho en pantallas grandes */
+        margin-bottom: 0;
+    }
+
+    .imagen {
+        flex: 1 1 48%; /* Ocupa el 48% del ancho en pantallas grandes */
+    }
+}
+
+/*FIN INDEX - INTRODUCCION*/
+
+
+/*INDEX - HABILIDADES*/
+
+
+.skills {
+    background-color: #D4A0FF;
+    padding: 50px 20px;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills h3 {
+    font-size: 1.75rem;
+    color: #444;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills ul li {
+    margin: 5px 0;
+    color: #D4A0FF;
+}
+
+.skills ul p{
+    margin: 5px 0;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo para cada bloque de habilidad */
+.skill {
+    flex: 1 1 80%; /* 100% en pantallas pequeñas */
+    margin: 30px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+   
+}
+
+/* En pantallas medianas a grandes (superiores a 768px) */
+@media (min-width: 768px) {
+    .skill {
+        flex: 1 1 48%; /* 48% del ancho en pantallas medianas */
+        margin-bottom: 0;
+    }
+}
+
+/* En pantallas grandes (superiores a 992px) */
+@media (min-width: 992px) {
+    .skill {
+        flex: 1 1 30.33%; /* 33.33% del ancho en pantallas grandes */
+    }
+}
+
+/*FIN INDEX - HABILIDADES*/
+
+
+/*INDEX - CERTIFICADOS*/
+.certifications {
+    background-color: #f9f9f9;
+    padding: 50px 15px;
+    text-align: center; /* Centrado del contenido */
+  }
+  
+  .certifications h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .certification-item {
+    border-left: 4px solid #FFA1DE;
+    border-radius: 8px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 30%; /* Asegura que cada item ocupe el 30% */
+    margin: 0 10px; /* Espaciado entre los items */
+  }
+  
+  .certifications h5 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .certif-txt {
+    font-size: 1rem;
+    color: #555;
+    margin: 30px 70px;
+  }
+  
+  .certifications p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    background-color: #FFA1DE;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #f99cd0;
+  }
+  
+  /* Responsive Design */
+  
+  @media (min-width: 768px) {
+    .certifications ul {
+      display: flex;
+      justify-content: center; /* Centrado de los elementos */
+      flex-wrap: wrap;
+      gap: 20px; /* Espaciado entre las certificaciones */
+    }
+  
+    /* Centrado de la carrera de desarrollo */
+    .certifications .certification-item:last-child {
+      width: 100%; /* La última certificación ocupa el 100% en pantallas grandes */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .certifications h2 {
+      font-size: 2rem;
+    }
+  
+    .certification-item {
+      width: 100%; /* En pantallas pequeñas, los items ocupan el 100% */
+      margin-bottom: 20px;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+   /*FOOTER*/
+   /* Estilos generales del footer */
+
+   .img-footer{
+    width: 150px;
+    border-radius: 25px;
+  }
+  
+.footer {
+    background-color: rgba(212, 160, 255, 0.7); /* Fondo semi-transparente */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para que los elementos se adapten en pantallas pequeñas */
+}
+
+
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-link img {
+    width: 80px; /* Tamaño del ícono */
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover img {
+    transform: scale(1.2); /* Efecto de aumento en hover */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+}
