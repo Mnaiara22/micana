@@ -347,3 +347,154 @@ h2{
         margin-top: 20px;
     }
 }
+
+
+/*SERVICIOS*/
+
+.services {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4C4C4C;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 992px) {
+    .service-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+  /*CONTACTO*/
+
+  .contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #D4A0FF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #FF6EC7;
+  }
+  
+    #response-message {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 1.1rem;
+        text-align: center;
+        display: none;
+      }
+      
+      .success {
+        background-color: rgba(255, 161, 222, 0.9); /* Fondo semi-transparente */
+        color: black;;
+        color: white;
+      }
+      
+      .error {
+        background-color: rgba(255, 161, 222, 0.9); /* Fondo semi-transparente */
+        color: black;;
+        color: white;
+      }
+      

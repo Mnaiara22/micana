@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios | Micana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="../images/" type="image/x-icon">
+
+  <link rel="stylesheet" href="../styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<header>
+  <!-- Banner -->
+  <div class="banner">
+    <img class="img-banner" src="../images/banner.jpeg" alt="">
+  </div>
+</header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <img class="img-navbar" src="../images/micana logo solo negro.jpg" alt="">
+
+      </div>
+    </div>
+  </nav>
+
+
+<body>
+  <section class="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form" action="https://formspree.io/f/mnnjbvqv" method="POST">
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="response-message"></div> <!-- Para mostrar el mensaje de éxito o error -->
+
+  
+  </section>
+  
+  
+</body>
+
+<script>
+  // Espera a que el documento esté listo
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('contact-form');
+    const responseMessage = document.getElementById('response-message');
+
+    // Event listener para el envío del formulario
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();  // Evita el comportamiento por defecto (recargar la página)
+
+      const formData = new FormData(form); // Toma los datos del formulario
+
+      // Usamos Fetch para enviar el formulario con AJAX
+      fetch(form.action, {
+        method: form.method,
+        body: formData
+      })
+        .then(response => {
+          if (response.ok) {
+            responseMessage.textContent = "¡Mensaje enviado exitosamente!";
+            responseMessage.classList.add('success');
+            responseMessage.classList.remove('error');
+          } else {
+            responseMessage.textContent = "¡Mensaje enviado exitosamente!";
+            responseMessage.classList.add('error');
+            responseMessage.classList.remove('success');
+          }
+          responseMessage.style.display = 'block'; // Muestra el mensaje de respuesta
+        })
+        .catch(error => {
+          responseMessage.textContent = "¡Mensaje enviado exitosamente!";
+          responseMessage.classList.add('error');
+          responseMessage.classList.remove('success');
+          responseMessage.style.display = 'block';
+        });
+    });
+  });
+</script>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+        <img src="../images/micana logo negro.jpg" alt="Logo" class="img-footer"> <!-- Asegúrate de tener la ruta correcta de tu logo -->
+        <div class="footer-links">
+            <a href="https://wa.me/351925149472" target="_blank" class="footer-link">
+                <img src="../images/whatsapp.png" alt="WhatsApp"> <!-- Asegúrate de tener la ruta correcta del ícono -->
+            </a> 
+            <a href="https://www.instagram.com/micana_developer/" target="_blank" class="footer-link">
+                <img src="../images/instagram.png" alt="Instagram"> <!-- Asegúrate de tener la ruta correcta del ícono -->
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
