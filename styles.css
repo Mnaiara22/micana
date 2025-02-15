@@ -506,3 +506,81 @@ h2{
         color: white;
       }
       
+
+
+
+
+
+
+
+
+
+
+
+.cv-qr{
+  background-color: #f9f9f9 ;
+}
+
+
+    
+    .intro-cv {
+        text-align: center;
+        background-color: #D4A0FF;
+        color: white;
+        padding: 2rem;
+    }
+    
+    .intro-cv h1 {
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .intro-cv p {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        padding: 2rem;
+        margin: 1rem 0;
+    }
+    
+    h2 {
+        color: #D4A0FF;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 1rem 0;
+    }
+    
+    ul li {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: #333
+    }
+
+    .info-cv p{
+      color: #333;
+    }
+    
+    /* Footer */
+    .contacto-cv {
+        text-align: center;
+        background-color: #FFA1DE;
+        color: white;
+        padding: 1rem;
+    }
+    
+    .contacto-cv p {
+        margin-bottom: 0.5rem;
+    }
+    
+    .contacto-cv a {
+      color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
