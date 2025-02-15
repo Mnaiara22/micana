@@ -565,6 +565,17 @@ h2{
       color: #333;
     }
     
+    .medioambiente{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .medioambiente-icon {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
     /* Footer */
     .contacto-cv {
         text-align: center;
