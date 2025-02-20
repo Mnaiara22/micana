@@ -27,6 +27,11 @@ h2{
     margin-bottom: 3rem;
 }
 
+::selection {
+  background-color: #333; /* Color de fondo del texto seleccionado */
+  color: #FFA1DE; /* Color del texto seleccionado */
+}
+
 /*HEADER*/
   
 .banner {
@@ -336,6 +341,19 @@ h2{
     transform: scale(1.2); /* Efecto de aumento en hover */
 }
 
+.developer{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.micana{
+  width: 50px;
+}
+
+
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .footer-container {
@@ -517,9 +535,6 @@ h2{
 
 
 
-.cv-qr{
-  background-color: #f9f9f9 ;
-}
 
 
     
@@ -561,8 +576,14 @@ h2{
         color: #333
     }
 
+    .cv-qr{
+      background-color: #f9f9f9 ;
+
+    }
+
     .info-cv p{
       color: #333;
+
     }
     
     .medioambiente{
